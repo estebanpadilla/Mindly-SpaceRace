@@ -28,12 +28,17 @@ export class GameManager {
         // this.netManager.loadInitialData(
         //     this.dataManager.receivedInitialData.bind(this.dataManager)
         // );
-        // this.mapKey = '-McXBn0jztsv1bwyVW-j';
+
+        this.mapKey = '-McXBn0jztsv1bwyVW-j';
+        // this.mapKey = '-McXJCcdy9Nj0KEGIzgn';//1 question map
+        // this.mapKey = '-MiK3X8vFFBWeXjvCKwK';
+
+        //Use queryString to deploy game to site
+        /*
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         this.mapKey = urlParams.get('mapKey')
-        // this.mapKey = '-McXJCcdy9Nj0KEGIzgn';//1 question map
-        // this.mapKey = '-MiK3X8vFFBWeXjvCKwK';
+        */
 
         this.netManager.downloadMapByKey(this.mapKey, this.dataManager.receivedMapData.bind(this.dataManager));
 
@@ -42,8 +47,8 @@ export class GameManager {
         this.isSoundOn = true;
         this.isMusicOn = true;
         this.selectedPlayer = '';
-        this.IS_DEBUG_BUILD = false;
-        this.VERSION = 'v 0.0.5';
+
+        this.VERSION = 'v 0.0.5b';
         this.BACKGROUND_R = 2;
         this.BACKGROUND_G = 7;
         this.BACKGROUND_B = 52;
