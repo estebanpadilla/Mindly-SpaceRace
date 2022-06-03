@@ -1,0 +1,76 @@
+/**
+* @name style.css
+* @file Add a small description for this file.
+* @author Esteban Padilla ep@estebanpadilla.com
+* @version 1.0.0
+*/
+
+:root {
+    --primary-color: black;
+    --secondary-color: orangered;
+}
+
+html body {}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+h1 {
+    color: var(--primary-color)
+}
+
+h2 {
+    color: var(--secondary-color)
+}
+
+button {
+    height: 40px;
+    pointer-events: all;
+    min-width: 20px;
+    width: 80%;
+    border-style: none;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 0px 5px 0px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--secondary-color);
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(197, 68, 17);
+}
+
+button:focus {
+    pointer-events: all;
+    outline: none;
+    background-color: var(--secondary-color);
+}
+
+input {
+    width: 100%;
+    pointer-events: all;
+    -webkit-appearance: none;
+    height: 30px;
+    font-size: 15px;
+}
+
+select {
+    pointer-events: all;
+}
+
+.hide {
+    display: none;
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

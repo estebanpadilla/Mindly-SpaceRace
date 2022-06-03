@@ -1,0 +1,22 @@
+.mapEditor_container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    /* z-index: 100; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: auto;
+    height: auto;
+    padding: 10px 10px 10px 10px;
+    background-color: azure;
+    pointer-events: all;
+}
+
+.mapEditor_rowsInput {}
+
+.mapEditor_row {
+    display: flex;
+    flex-direction: row;
+}
